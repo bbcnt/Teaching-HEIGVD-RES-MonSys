@@ -2,8 +2,8 @@
 
 ```
 # -- INSERT YOUR NAMES HERE -----
-Bruno Brito Carvalho,
-Julien Bignens
+First name, Last name
+First name, Last name
 
 We certify that we have done all the lab tasks and we have a running environment on our 
 machine to prove it. We are ready to demonstrate it at any time and to explain the process
@@ -16,78 +16,7 @@ we have followed.
 # -- YOUR ANSWER TO QUESTION 1 --
 
 # -------------------------------
-
-Microsoft Windows [version 6.2.9200]
-(c) 2012 Microsoft Corporation. Tous droits réservés.
-
-C:\Windows\system32>cd C:\Users\brito_000\Documents\GitHub\Teaching-HEIGVD-RES-M
-onSys\monsys-web-infra
-
-C:\Users\brito_000\Documents\GitHub\Teaching-HEIGVD-RES-MonSys\monsys-web-infra>
-vagrant up
-Bringing machine 'default' up with 'virtualbox' provider...
-==> default: Box 'phusion-open-ubuntu-14.04-amd64' could not be found. Attemptin
-g to find and install...
-    default: Box Provider: virtualbox
-    default: Box Version: >= 0
-==> default: Adding box 'phusion-open-ubuntu-14.04-amd64' (v0) for provider: vir
-tualbox
-    default: Downloading: https://oss-binaries.phusionpassenger.com/vagrant/boxe
-s/latest/ubuntu-14.04-amd64-vbox.box
-    default: Progress: 100% (Rate: 1584k/s, Estimated time remaining: --:--:--)
-==> default: Successfully added box 'phusion-open-ubuntu-14.04-amd64' (v0) for '
-virtualbox'!
-==> default: Importing base box 'phusion-open-ubuntu-14.04-amd64'...
-==> default: Matching MAC address for NAT networking...
-==> default: Setting the name of the VM: monsys-web-infra_default_1399531839232_
-98861
-==> default: Clearing any previously set forwarded ports...
-==> default: Clearing any previously set network interfaces...
-==> default: Preparing network interfaces based on configuration...
-    default: Adapter 1: nat
-    default: Adapter 2: hostonly
-==> default: Forwarding ports...
-    default: 9090 => 8080 (adapter 1)
-    default: 22 => 2222 (adapter 1)
-==> default: Booting VM...
-==> default: Waiting for machine to boot. This may take a few minutes...
-    default: SSH address: 127.0.0.1:2222
-    default: SSH username: vagrant
-    default: SSH auth method: private key
-    default: Warning: Connection timeout. Retrying...
-==> default: Machine booted and ready!
-==> default: Checking for guest additions in VM...
-==> default: Configuring and enabling network interfaces...
-==> default: Mounting shared folders...
-    default: /vagrant => C:/Users/brito_000/Documents/GitHub/Teaching-HEIGVD-RES
--MonSys/monsys-web-infra
-==> default: Running provisioner: shell...
-    default: Running: inline script
-==> default: stdin: is not a tty
-==> default: Cleaning up Docker containers...
-==> default: /tmp/vagrant-shell: line 2: docker: command not found
-==> default: /tmp/vagrant-shell: line 3: docker: command not found
-==> default: /tmp/vagrant-shell: line 4: docker: command not found
-==> default: /tmp/vagrant-shell: line 5: docker: command not found
-==> default: /tmp/vagrant-shell: line 6: docker: command not found
-==> default: /tmp/vagrant-shell: line 7: docker: command not found
-==> default: /tmp/vagrant-shell: line 8: docker: command not found
-==> default: /tmp/vagrant-shell: line 9: docker: command not found
-==> default: Running provisioner: docker...
-    default: Installing Docker (latest) onto machine...
-    default: Configuring Docker to autostart containers...
-==> default: Building Docker images...
-==> default: -- Path: /vagrant/docker/rp-nginx
-==> default: -- Path: /vagrant/docker/web-apache
-==> default: -- Path: /vagrant/docker/app-nodejs
-==> default: Starting Docker containers...
-==> default: -- Container: rp-node
-==> default: -- Container: web-node-1
-==> default: -- Container: web-node-2
-==> default: -- Container: app-node
-
-C:\Users\brito_000\Documents\GitHub\Teaching-HEIGVD-RES-MonSys\monsys-web-infra>
-
+```
 
 ```
 # -- YOUR ANSWER TO QUESTION 2 --
