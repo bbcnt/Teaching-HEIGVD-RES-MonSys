@@ -15,13 +15,7 @@ we have followed.
 # -- YOUR ANSWER TO QUESTION 1 --
 
 # -------------------------------
--	
--	Microsoft Windows [version 6.2.9200]
--	(c) 2012 Microsoft Corporation. Tous droits réservés.
--	
--	C:\Windows\system32>cd C:\Users\brito_000\Documents\GitHub\Teaching-HEIGVD-RES-M
--	onSys\monsys-web-infra
--	
+
 -	C:\Users\brito_000\Documents\GitHub\Teaching-HEIGVD-RES-MonSys\monsys-web-infra>
 -	vagrant up
 -	Bringing machine 'default' up with 'virtualbox' provider...
@@ -85,19 +79,25 @@ we have followed.
 -	==> default: -- Container: web-node-2
 -	==> default: -- Container: app-node
 
-
 ```
 # -- YOUR ANSWER TO QUESTION 2 --
 
 # -------------------------------
 ```
-
+vagrant@ubuntu-14:~$ uname -a
+Linux ubuntu-14 3.13.0-24-generic #46-Ubuntu SMP Thu Apr 10 19:11:08 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+vagrant@ubuntu-14:~$
 ```
 # -- YOUR ANSWER TO QUESTION 3 --
 
 # -------------------------------
 ```
-
+vagrant@ubuntu-14:~$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+heig/app-nodejs     latest              35d24e13e7b0        About an hour ago   486.3 MB
+heig/web-apache     latest              2015d5b8c489        About an hour ago   499.2 MB
+heig/rp-nginx       latest              240b3514f31f        About an hour ago   725.3 MB
+dockerfile/ubuntu   latest              9a6f05000058        19 hours ago        465.8 MB
 ```
 # -- YOUR ANSWER TO QUESTION 4 --
 
