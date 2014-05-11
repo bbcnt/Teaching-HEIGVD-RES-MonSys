@@ -103,22 +103,53 @@ dockerfile/ubuntu   latest              9a6f05000058        19 hours ago        
 
 # -------------------------------
 ```
-
+vagrant@ubuntu-14:~$ docker ps
+CONTAINER ID        IMAGE                    COMMAND                CREATED             STATUS              PORTS
+           NAMES
+22b9d3eb4822        heig/app-nodejs:latest   node /opt/server.js    About an hour ago   Up About an hour    0.0.0.0:
+->80/tcp   app-node
+a61e0ed3f367        heig/web-apache:latest   /usr/sbin/apache2ctl   About an hour ago   Up About an hour    0.0.0.0:
+->80/tcp   web-node-2
+4ae7648a686c        heig/web-apache:latest   /usr/sbin/apache2ctl   About an hour ago   Up About an hour    0.0.0.0:
+->80/tcp   web-node-1
 ```
 # -- YOUR ANSWER TO QUESTION 5 --
 
 # -------------------------------
 ```
+GATEWAY    : 172.17.42.1
+WEB-NODE-1 : 172.17.0.2
+WEB-NODE-2 : 172.17.0.3
+APP-NODE   : 172.17.0.4
+RP-NODE    : -
+
+vagrant@ubuntu-14:~$ docker ps -a
+CONTAINER ID        IMAGE                    COMMAND                CREATED             STATUS                     P
+                  NAMES
+22b9d3eb4822        heig/app-nodejs:latest   node /opt/server.js    About an hour ago   Up About an hour           0
+.0:7070->80/tcp   app-node
+a61e0ed3f367        heig/web-apache:latest   /usr/sbin/apache2ctl   About an hour ago   Up About an hour           0
+.0:8082->80/tcp   web-node-2
+4ae7648a686c        heig/web-apache:latest   /usr/sbin/apache2ctl   About an hour ago   Up About an hour           0
+.0:8081->80/tcp   web-node-1
+b0b1d0206296        heig/rp-nginx:latest     /opt/init.sh           About an hour ago   Exited (1) 8 seconds ago
+                  rp-node
+
+We don't know why rp-node isn't working, even doing docker start rp-node, it exits shortly after. This is the result of the log command:
+
+vagrant@ubuntu-14:~$ docker logs rp-node
+2014/05/11 10:34:18 no such file or directory
+2014/05/11 12:14:52 no such file or directory
 
 ```
 # -- YOUR ANSWER TO QUESTION 6 --
 
 Host (your laptop):
-- IP address: H.H.H.H
+- IP address: 10.192.21.9
 
 Virtual Machine run by Virtual Box
-- IP address: B.B.B.B
-- PAT: packets arriving on H.H.H.H:PH are forwarded to B.B.B.B:PB
+- IP address: 192.168.33.20 (VMware use 192.168.56.1 as given by ipconfig)
+- PAT: packets arriving on 10.192.21.9:8080 are forwarded to 192.168.33.20:9090
 
 Docker Bridge
 - IP address: DB.DB.DB.DB
