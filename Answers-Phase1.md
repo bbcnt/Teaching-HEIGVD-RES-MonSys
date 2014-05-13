@@ -138,10 +138,10 @@ Docker Container 4
 - IP address: 172.17.0.5
 
 # -------------------------------
-```
 
 ```
 # -- YOUR ANSWER TO QUESTION 7 --
+```
 
 Which command did you type on the terminal to establish the connection?
 
@@ -151,9 +151,9 @@ What HTTP response did you get?
 # -------------------------------
 ```
 
-```
 # -- YOUR ANSWER TO QUESTION 8 --
 
+```
 Which command did you type on the terminal to establish the connection?
 
 What HTTP request did you type and send?
