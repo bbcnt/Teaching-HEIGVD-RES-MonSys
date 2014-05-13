@@ -115,15 +115,15 @@ Host (your laptop):
 - IP address: 10.192.87.174
 
 Virtual Machine run by Virtual Box
-- IP address: 192.168.33.20 (VMware use 192.168.56.1 as given by ipconfig)
-- PAT: packets arriving on 10.192.87.174:8080 are forwarded to 192.168.33.20:9090
+- IP address: 192.168.33.20 
+- PAT: packets arriving on 10.192.87.174:9090 are forwarded to 192.168.33.20:8080
 
 Docker Bridge
 - IP address: 172.17.42.1
-- PAT: packets arriving on 172.17.42.1:9090 are forwarded to 172.17.0.2:80
-- PAT: packets arriving on 172.17.42.1:8081 are forwarded to 172.17.0.3:80
-- PAT: packets arriving on 172.17.42.1:8082 are forwarded to 172.17.0.4:80
-- PAT: packets arriving on 172.17.42.1:7070 are forwarded to 172.17.0.5:PC4
+- PAT: packets arriving on 192.168.33.20:9090 are forwarded to 172.17.0.2:80
+- PAT: packets arriving on 192.168.33.20:8081 are forwarded to 172.17.0.3:80
+- PAT: packets arriving on 192.168.33.20:8082 are forwarded to 172.17.0.4:80
+- PAT: packets arriving on 192.168.33.20:7070 are forwarded to 172.17.0.5:80
 
 Docker Container 1
 - IP address: 172.17.0.2
@@ -137,6 +137,8 @@ Docker Container 3
 Docker Container 4
 - IP address: 172.17.0.5
 
+
+BTW: This part is not exactly clear, we always use telnet with the address 192.168.33.20, which is supposed to be the VM address and not the Docker Bridge's and it works.
 # -------------------------------
 
 ```
@@ -232,9 +234,29 @@ Switzerland
 ```
 Which command did you type on the terminal to establish the connection?
 
+-> telnet 192.168.33.20
+
 What HTTP request did you type and send?
 
+-> GET /ajax/resources/nodes HTTP/1.1
+   Host: www.monsys.com
+
 What HTTP response did you get?
+
+-> HTTP/1.1 200 OK
+Server: nginx/1.6.0
+Date: Tue, 13 May 2014 16:50:52 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+fb
+[{"name":"P-001","description":"Epson Printer","currentLoadLevel":72.59253393858
+671},{"name":"P-002","description":"Canon Printer","currentLoadLevel":28.9165843
+27816963},{"name":"P-003","description":"HP Printer","currentLoadLevel":38.56128
+102634102}]
+0
+
 # -------------------------------
 ```
 
