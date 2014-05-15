@@ -263,22 +263,128 @@ fb
 ```
 # -- YOUR ANSWER TO QUESTION 9 --
 
-What procedure did you follow to validate the configuration of 
-your new web nodes? 
+RESULTS --------------------------
+
+We tried a few GET requests on the different servers, for both the virtual hosts.
+
+Using telnet with 192.168.33.20:PORT
+For PORTS, we have 8083, 8084, 8085
+
+----------------------------------
 
 Provide details and evidence (command results, etc.) that your 
 setup is correct.
+
+RESULTS --------------------------
+
+These are some of the results we obtained : 
+This one with the following request : 
+
+GET / HTTP/1.1
+Host: www.live.clashofclasses.ch
+
+HTTP/1.1 200 OK
+Date: Thu, 15 May 2014 14:04:01 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Vary: Accept-Encoding
+Content-Length: 1359
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+                                                       <html>
+                                                              <head>
+                                                                      <title>Ind
+ex of /</title>
+                </head>
+                        <body>
+                              <h1>Index of /</h1>
+                                                   <table>
+                                                             <tr><th valign="top
+"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></
+th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a><
+/th><th><a href="?C=D;O=A">Description</a></th></tr>
+                                                       <tr><th colspan="5"><hr><
+/th></tr>
+         <tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td>
+<a href="css/">css/</a></td><td align="right">2014-05-15 12:41  </td><td align="
+right">  - </td><td>&nbsp;</td></tr>
+                                    <tr><td valign="top"><img src="/icons/text.g
+if" alt="[TXT]"></td><td><a href="live-index.html">live-index.html</a></td><td a
+lign="right">2014-05-15 06:40  </td><td align="right">2.0K</td><td>&nbsp;</td></
+tr>
+   <tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a hre
+f="script/">script/</a></td><td align="right">2014-05-15 12:25  </td><td align="
+right">  - </td><td>&nbsp;</td></tr>
+                                    <tr><td valign="top"><img src="/icons/image2
+.gif" alt="[IMG]"></td><td><a href="success.jpg">success.jpg</a></td><td align="
+right">2014-05-15 06:40  </td><td align="right"> 70K</td><td>&nbsp;</td></tr>
+
+<tr><th colspan="5"><hr></th></tr>
+                                  </table>
+                                          <address>Apache/2.4.7 (Ubuntu) Server
+at www.live.clashofclasses.ch Port 80</address>
+                                               </body></html>
+
+---------------------------------
+
+This result was then obtained with the following request:
+
+GET / HTTP/1.1
+Host: www.leaderboard.clashofclasses.ch
+
+HTTP/1.1 200 OK
+Date: Thu, 15 May 2014 14:11:00 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Vary: Accept-Encoding
+Content-Length: 1368
+Content-Type: text/html;charset=UTF-8
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+                                                       <html>
+                                                              <head>
+                                                                      <title>Ind
+ex of /</title>
+                </head>
+                        <body>
+                              <h1>Index of /</h1>
+                                                   <table>
+                                                             <tr><th valign="top
+"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></
+th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a><
+/th><th><a href="?C=D;O=A">Description</a></th></tr>
+                                                       <tr><th colspan="5"><hr><
+/th></tr>
+         <tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td>
+<a href="css/">css/</a></td><td align="right">2014-05-15 12:43  </td><td align="
+right">  - </td><td>&nbsp;</td></tr>
+                                    <tr><td valign="top"><img src="/icons/text.g
+if" alt="[TXT]"></td><td><a href="dashboard-index.html">dashboard-index.html</a>
+</td><td align="right">2014-05-15 06:40  </td><td align="right">2.0K</td><td>&nb
+sp;</td></tr>
+             <tr><td valign="top"><img src="/icons/image2.gif" alt="[IMG]"></td>
+<td><a href="kid.jpg">kid.jpg</a></td><td align="right">2014-05-15 06:40  </td><
+td align="right">145K</td><td>&nbsp;</td></tr>
+                                              <tr><td valign="top"><img src="/ic
+ons/folder.gif" alt="[DIR]"></td><td><a href="script/">script/</a></td><td align
+="right">2014-05-15 12:42  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+
+  <tr><th colspan="5"><hr></th></tr>
+                                    </table>
+                                            <address>Apache/2.4.7 (Ubuntu) Serve
+r at www.leaderboard.clashofclasses.ch Port 80</address>
+                                                        </body></html>
+
+---------------------------------
+
+As we can see, we obtained the good result with both virtual hosts. 
+
 # -------------------------------
 ```
 
 ```
 # -- YOUR ANSWER TO QUESTION 10 --
 
-What procedure did you follow to validate the configuration of 
-your complete infrastructure?
 
-Provide details and evidence (command results, etc.) that your 
-setup is correct.
 
 # -------------------------------
 ```
