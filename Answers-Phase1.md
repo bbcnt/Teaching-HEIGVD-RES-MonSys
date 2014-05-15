@@ -384,6 +384,8 @@ As we can see, we obtained the good result with both virtual hosts, once the das
 ```
 # -- YOUR ANSWER TO QUESTION 10 --
 
+```
+
 We added the links 
 www.live.clashofclasses.ch and 
 www.leaderboard.clashofclasses.ch
@@ -391,11 +393,11 @@ in the hosts file.
 
 These are the results:
 
-[![](./images/live.PNG)](#)
+![alt tag](https://github.com/bbcnt/Teaching-HEIGVD-RES-MonSys/blob/master/images/leaderboard.jpg)
 
 and also 
 
-[![](./images/leaderboard.PNG)](#)
+![alt tag](https://github.com/bbcnt/Teaching-HEIGVD-RES-MonSys/blob/master/images/live.jpg)
 
 # -------------------------------
 ```
