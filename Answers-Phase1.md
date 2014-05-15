@@ -262,8 +262,6 @@ fb
 
 ```
 # -- YOUR ANSWER TO QUESTION 9 --
-```
-```
 
 RESULTS --------------------------
 
@@ -378,7 +376,7 @@ r at www.leaderboard.clashofclasses.ch Port 80</address>
 
 ---------------------------------
 
-As we can see, we obtained the good result with both virtual hosts. 
+As we can see, we obtained the good result with both virtual hosts, once the dashboard index and once the live index.
 
 # -------------------------------
 ```
@@ -386,7 +384,18 @@ As we can see, we obtained the good result with both virtual hosts.
 ```
 # -- YOUR ANSWER TO QUESTION 10 --
 
+We added the links 
+www.live.clashofclasses.ch and 
+www.leaderboard.clashofclasses.ch
+in the hosts file.
 
+These are the results:
+
+[![](images/live.PNG)]
+
+and also 
+
+[![](images/leaderboard.PNG)]
 
 # -------------------------------
 ```
