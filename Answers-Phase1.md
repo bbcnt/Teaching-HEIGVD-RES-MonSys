@@ -383,7 +383,8 @@ As we can see, we obtained the good result with both virtual hosts, once the das
 
 ```
 # -- YOUR ANSWER TO QUESTION 10 --
-
+````
+###
 We added the links 
 www.live.clashofclasses.ch and 
 www.leaderboard.clashofclasses.ch
@@ -396,7 +397,8 @@ These are the results:
 and also 
 
 [![](./images/leaderboard.PNG)](#)
-
+###
+```
 # -------------------------------
 ```
 
