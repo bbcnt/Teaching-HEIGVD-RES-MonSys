@@ -390,6 +390,7 @@ www.leaderboard.clashofclasses.ch
 in the hosts file.
 
 These are the results:
+```
 
 [![](images/live.PNG)]
 
@@ -397,6 +398,7 @@ and also
 
 [![](images/leaderboard.PNG)]
 
+```
 # -------------------------------
 ```
 
