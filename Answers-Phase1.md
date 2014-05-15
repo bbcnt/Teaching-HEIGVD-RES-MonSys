@@ -393,11 +393,11 @@ in the hosts file.
 
 These are the results:
 
-![alt tag](https://github.com/bbcnt/Teaching-HEIGVD-RES-MonSys/blob/master/images/leaderboard.jpg)
+![alt tag](https://github.com/bbcnt/Teaching-HEIGVD-RES-MonSys/raw/master/images/leaderboard.jpg)
 
 and also 
 
-![alt tag](https://github.com/bbcnt/Teaching-HEIGVD-RES-MonSys/blob/master/images/live.jpg)
+![alt tag](https://github.com/bbcnt/Teaching-HEIGVD-RES-MonSys/raw/master/images/live.jpg)
 
 # -------------------------------
 ```
