@@ -22,7 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	# accessing "localhost:8080" will access port 80 on the guest machine.
 	#EXTRA : to be able to go directly to website without typing 9090, all occurences of 9090
 	#must be replaced with 80 in this document (2 occurences).
-	config.vm.network "forwarded_port", guest: 9090, host: 8080
+	config.vm.network "forwarded_port", guest: 80, host: 8080
 	
 
     # ==============================================================================
@@ -78,7 +78,7 @@ SCRIPT
 	    # mapping: if a client tries to open a TCP connection on the IP of the box and on the 
 	    # specified port, it will get a connection to the container on port 80
 
-		d.run "rp-node", image: "heig/rp-nginx", args: "-p 9090:80"
+		d.run "rp-node", image: "heig/rp-nginx", args: "-p 80:80"
 
 
         # Same thing for the web server image, from which we run 2 containers. Same thing
