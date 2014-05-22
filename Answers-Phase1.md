@@ -1,3 +1,4 @@
+
 # Answers, Phase 1
 
 ```
@@ -399,6 +400,8 @@ and also
 
 ![alt tag](https://github.com/bbcnt/Teaching-HEIGVD-RES-MonSys/raw/master/images/live.jpg)
 
+
+Note: We used the 80 port in the redirection, so we don't need to provide the port in the URL, but it was asked to use 8014. It we do that, we have to type www.live.clashofclasses:8014 as the URL.
 # -------------------------------
 ```
 
